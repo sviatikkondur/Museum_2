@@ -61,6 +61,32 @@
       grid-column: span 3;
       grid-row: 4 / 5;
     }
+
+    @include onDesktop {
+      margin-bottom: 135px;
+    }
+  }
+  &__divider {
+    display: none;
+
+    @include onDesktop {
+      grid-row: 5 / 6;
+      grid-column: 1 / 7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      white-space: nowrap;
+      gap: 8px;
+      color: $white;
+
+      &::after {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: $white;
+        opacity: 0.3;
+      }
+    }
   }
 
   @include onTablet {
