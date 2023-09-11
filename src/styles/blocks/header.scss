@@ -7,11 +7,16 @@
 
   &__content {
     height: 100vh;
+
   }
 
   &__bottom {
     @include onTablet {
       @include pageGrid;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / -1;
     }
   }
 
@@ -61,23 +66,21 @@
       grid-column: span 3;
       grid-row: 4 / 5;
     }
-
-    @include onDesktop {
-      margin-bottom: 135px;
-    }
   }
   &__divider {
     display: none;
 
     @include onDesktop {
-      grid-row: 5 / 6;
-      grid-column: 1 / 7;
+      position: absolute;
+      bottom: 50px;
+      width: 38vw;
       display: flex;
       justify-content: center;
       align-items: center;
       white-space: nowrap;
       gap: 8px;
       color: $white;
+      opacity: 0.7;
 
       &::after {
         content: "";

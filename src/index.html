@@ -20,8 +20,16 @@
                 class="top-bar__logo"
               >
             </a>
-            <div class="top-bar-icons">
+            <div class="top-bar__icons">
               <a href="#menu" class="icon icon--menu"></a>
+              <select
+                name="language"
+                id="language"
+                class="top-bar__language-switch"
+              >
+                <option class="top-bar__language-option" value="UA" selected>UA</option>
+                <option class="top-bar__language-option" value="ENG" disabled>ENG</option>
+              </select>
             </div>
           </div>
           <div class="header__bottom">
@@ -30,8 +38,9 @@
             <p class="header__main-text main-text">Внесок українських митців у світову культуру 19-20 ст.</p>
             <button class="header__button button">Купити квиток</button>
 
-            <h6 class="header__divider">10.08 - 10.10</h6>
           </div>
+
+          <h6 class="header__divider">10.08 - 10.10</h6>
         </div>
       </div>
     </header>

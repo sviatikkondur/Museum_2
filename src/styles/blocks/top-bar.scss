@@ -5,11 +5,43 @@
   margin-bottom: 70px;
   padding-top: 20px;
 
+
   @include onTablet {
     margin-bottom: 119px;
   }
 
-  @include onDesktop {
-    padding-top: 26px;
+  &__logo {
+    @include hover(scale, 1.1);
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__language-switch {
+    display: none;
+    @include hover(scale, 1.1);
+
+    @include onTablet {
+      display: unset;
+      cursor: pointer;
+      color: $white;
+      text-align: center;
+      font-family: "Raleway";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+  }
+
+  &__language-option {
+    background: $background;
+    border: none;
   }
 }

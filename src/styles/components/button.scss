@@ -3,4 +3,6 @@
   background-color: $main;
   border: none;
   cursor: pointer;
+
+  @include hover(scale, 1.02);
 }
