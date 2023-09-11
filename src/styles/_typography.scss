@@ -1,3 +1,31 @@
 h1 {
   @extend %h1;
 }
+
+
+.additional-text {
+  color: $gray-headings;
+  font-family: "Raleway";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.main-text {
+  color: $gray-headings;
+  font-family: "Raleway";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.button {
+  color: $white;
+  font-family: "Raleway";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
