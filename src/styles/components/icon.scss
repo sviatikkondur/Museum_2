@@ -1,0 +1,16 @@
+.icon{
+  display: block;
+  height: 22px;
+  width: 22px;
+
+
+  @include onTablet {
+    height: 30px;
+    width: 30px;
+  }
+
+  &--menu {
+    background-image: url(../images/icons/menu.svg);
+    background-size: cover;
+  }
+}
