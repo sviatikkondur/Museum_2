@@ -1,0 +1,115 @@
+.menu {
+  height: 100vh;
+  background-color: $background;
+
+  &__language-switch {
+    display: unset;
+  }
+
+  &__top {
+    margin-bottom: 30px;
+
+    @include onTablet {
+      margin-bottom: 50px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__icons {
+    flex-direction: row-reverse;
+    gap: 30px;
+
+    @include onTablet {
+      flex-direction: row;
+      gap: 40px;
+    }
+  }
+
+  &__bottom {
+    @include onTablet {
+      @include pageGrid;
+    }
+  }
+
+  &__nav {
+    margin-bottom: 40px;
+
+    @include onTablet {
+      grid-column: 1 / -1;
+      margin-bottom: 50px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+
+    @include onTablet {
+      grid-column: 1 / -1;
+      flex-direction: row;
+      gap: 123px;
+      margin-bottom: 50px;
+    }
+
+    @include onDesktop {
+      gap: 83px;
+    }
+  }
+
+  &__subtitle {
+    color: $white;
+  }
+
+  &__text {
+    color: $white;
+    font-weight: 600;
+    text-decoration: none;
+
+    &--link {
+      @include link-hover;
+    }
+  }
+
+  &__divider {
+    height: 1px;
+    width: 100%;
+    background-color: $white;
+    margin-bottom: 40px;
+    opacity: 0.3;
+
+    @include onTablet {
+      grid-column: 1 / -1;
+      margin-bottom: 50px;
+    }
+
+    @include onDesktop {
+      grid-column: span 6;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__button {
+    grid-column: 1 / 4;
+  }
+
+  @include onTablet {
+    background-image: url(../images/img_menu.png);
+    background-size: 422px 466px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+
+  @include onDesktop {
+    background-size: 624px 697px;
+    background-position: right bottom;
+  }
+}

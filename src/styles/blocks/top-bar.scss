@@ -22,21 +22,22 @@
 
   &__language-switch {
     display: none;
+    cursor: pointer;
+    color: $white;
+    text-align: center;
+    font-family: "Raleway";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
     @include hover(scale, 1.1);
 
     @include onTablet {
       display: unset;
-      cursor: pointer;
-      color: $white;
-      text-align: center;
-      font-family: "Raleway";
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 150%;
-      background-color: transparent;
-      border: none;
-      outline: none;
     }
   }
 

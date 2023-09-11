@@ -46,3 +46,9 @@
     --columns: 12;
   }
 }
+
+@mixin link-hover {
+  &:hover {
+    color: $link-hover-color;
+  }
+}

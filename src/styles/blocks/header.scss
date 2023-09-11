@@ -60,8 +60,6 @@
   }
 
   &__button {
-    width: 100%;
-
     @include onTablet {
       grid-column: span 3;
       grid-row: 4 / 5;
